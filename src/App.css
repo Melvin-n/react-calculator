@@ -1,0 +1,151 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 215, 215);
+}
+
+@font-face {
+    font-family: digital;
+    src: url('../public/digital-7.ttf');
+}
+
+#container {
+    width: 25%;
+    height: 60%;
+    border: 2px solid black;
+    font-family: 'digital';
+    background-color: black;
+    color: white;
+    
+}
+#display-area {
+    width: 100%;
+    height: 30%;
+    /* border-bottom: 2px solid black; */
+    
+}
+
+#input-area {
+    width: 99.5%;
+    height: 50%;
+    border: none;
+    outline: none;
+    text-align: end;
+    font-size: 2.5rem;
+    font-family: 'digital';
+    margin-top: 2px;
+    
+
+}
+
+#display {
+    width: 98%;
+    height: 30%;
+    text-align: end;
+    font-family: 'digital';
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+
+}
+
+#button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow:dense;
+}
+
+button {
+    width: 6.2vw;
+    height: 8.3vh;
+    font-family: 'digital';
+    font-size: 2rem;
+}
+
+button#equals {
+    height: 16.6vh;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: span 2;
+}
+
+button#clear {
+    height: 16.6vh;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+button#decimal {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 5;
+}
+
+button#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 12.4vw;
+}
+
+button#one {
+    grid-row-start: 4;
+    grid-column-end: 2 ;
+}
+
+button#two {
+    grid-row-start: 4;
+    grid-column-end: 3 ;
+}
+
+button#three {
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-column-end: 4 ;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(48, 46, 46);
+}
+
+button.operator-button {
+    background-color: rgb(179, 23, 179);
+    color: white;
+}
+
+button.operator-button:hover {
+    background-color: purple;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+      width: 90vw;
+    }
+    button {
+        width: 20vw;
+        height: 8.3vh;
+        font-family: 'digital';
+        font-size: 2rem;
+    }
+    button#zero {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 40vw;
+    }
+  }
