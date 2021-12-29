@@ -1,5 +1,7 @@
 # Getting Started with Create React App
-Calculator project fro freecodecamp frontend cert
+Calculator project for freecodecamp frontend cert
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
