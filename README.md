@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 Calculator project for freecodecamp frontend cert
+Hosted: https://optimistic-dubinsky-753390.netlify.app/
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
